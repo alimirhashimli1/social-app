@@ -62,11 +62,15 @@ const Form = () => {
 
 
     return (
-        <Formik onSubmit={handleFormSubmit} initialValues={isLogin ? initialValuesLogin : initialValuesRegister} validationSchema={isLogin ? loginSchema : regis[]}>
+        <Formik onSubmit={handleFormSubmit} initialValues={isLogin ? initialValuesLogin : initialValuesRegister} validationSchema={isLogin ? loginSchema : registrerSChema}> (
+
+        )
             {
-                values
-            }
+                values, errors, touched,
+            }) => {
+                fvofm
+            }d
         </Formik>
     )
 
-export default Form;
+export default Form;s
